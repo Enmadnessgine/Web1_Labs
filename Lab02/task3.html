@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="uk">
+<head>
+    <meta charset="utf-8">
+    <title>Моє портфоліо</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #0f1115;
+            color: #eaeef7;
+        }
+
+        header {
+            background: #1b1f2a;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 38px;
+        }
+
+        section {
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+
+        .card {
+            background: #151a24;
+            border: 1px solid #2b3242;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 10px;
+            border: 1px solid #2b3242;
+            transition: transform 0.2s;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.03);
+        }
+
+        a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        nav {
+            margin-top: 15px;
+        }
+
+        nav a {
+            background: #eaeef7;
+            color: #0f1115;
+            padding: 8px 14px;
+            border-radius: 8px;
+            margin: 5px;
+            display: inline-block;
+            font-weight: bold;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #9aa8c3;
+            border-top: 1px solid #2b3242;
+        }
+    </style>
+</head>
+<body>
+
+<a id="top"></a>
+
+<header>
+    <h1>Моє портфоліо</h1>
+
+    <!-- Якірні посилання -->
+    <nav>
+        <a href="#about">Про мене</a>
+        <a href="#gallery">Галерея</a>
+    </nav>
+</header>
+
+<section id="about">
+    <div class="card">
+        <h2>Про мене</h2>
+        <p>
+            Мене захоплює музика, особливо гра на гітарі. У вільний час я практикую різні техніки,
+            вчу нові композиції та експериментую зі звуком.
+        </p>
+        <p>
+            Також люблю фотографувати моменти, пов’язані з творчістю та атмосферою, яка мене надихає.
+            Для мене музика — це спосіб самовираження та відпочинку.
+        </p>
+    </div>
+</section>
+
+<section id="gallery">
+    <div class="card">
+        <h2>Галерея</h2>
+        <p>Натисніть на зображення, щоб перейти до пов’язаної сторінки в інтернеті.</p>
+
+        <div class="gallery">
+
+            <!-- Фото 1 -->
+            <a href="https://uk.wikipedia.org/wiki/Електрогітара" target="_blank">
+                <img src="guitars.jpg" alt="Електрогітара та акустична гітара">
+                <p>Електрогітара та обладнання</p>
+            </a>
+
+            <!-- Фото 2 -->
+            <a href="https://uk.wikipedia.org/wiki/Акустична_гітара" target="_blank">
+                <img src="acoustic.jpg" alt="Акустична гітара">
+                <p>Акустична гітара</p>
+            </a>
+
+            <!-- Фото 3 -->
+            <a href="https://uk.wikipedia.org/wiki/Музика" target="_blank">
+                <img src="hearts.jpg" alt="Фото з гітарою та декораціями">
+                <p>Музика як хобі та натхнення</p>
+            </a>
+
+        </div>
+
+        <p>
+            <a href="#top">↑ Повернутися вгору</a>
+        </p>
+    </div>
+</section>
+
+<footer>
+    © Моє портфоліо
+</footer>
+
+</body>
+</html>
