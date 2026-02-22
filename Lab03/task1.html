@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Робота з аудіо та відео</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+        }
+        section {
+            margin: 30px 0;
+        }
+        video, audio {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Робота з аудіо та відео</h1>
+
+    <section>
+        <h2>Відеоплеєр</h2>
+        <video width="600" controls loop muted preload="metadata">
+            <source src="video.mp4" type="video/mp4">
+            Ваш браузер не підтримує відео.
+        </video>
+    </section>
+
+    <section>
+        <h2>Аудіотреки</h2>
+
+        <p>Трек 1:</p>
+        <audio controls preload="metadata">
+            <source src="audio1.mp3" type="audio/mpeg">
+            Ваш браузер не підтримує аудіо.
+        </audio>
+
+        <p>Трек 2 (з повторенням):</p>
+        <audio controls loop preload="metadata">
+            <source src="audio2.mp3" type="audio/mpeg">
+            Ваш браузер не підтримує аудіо.
+        </audio>
+
+        <p>Трек 3 (без звуку при старті):</p>
+        <audio controls muted preload="auto">
+            <source src="audio1.mp3" type="audio/mpeg">
+            Ваш браузер не підтримує аудіо.
+        </audio>
+
+    </section>
+
+</body>
+</html>
