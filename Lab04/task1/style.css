@@ -1,0 +1,36 @@
+p {
+    color: red;
+    text-align: center;
+}
+
+.green-text {
+    color: green;
+}
+
+#pink-text {
+    color: pink;
+}
+
+body > a {
+    color: red;
+}
+
+.menu a {
+    color: pink;
+}
+
+.menu > li > a {
+    color: green;
+}
+
+.menu ul {
+    list-style-type: none;
+}
+
+.menu > li:last-child > ul {
+    list-style-type: square;
+}
+
+.menu > li:last-child > ul a {
+    text-decoration: none;
+}

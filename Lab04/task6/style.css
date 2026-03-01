@@ -1,0 +1,14 @@
+body {
+    font-family: "Times New Roman", serif;
+    font-size: 20px;
+    padding: 40px;
+}
+
+p:nth-child(even)::first-line {
+    color: green;
+}
+
+p:nth-child(odd)::first-letter {
+    color: red;
+    font-size: 28px;
+}

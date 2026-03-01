@@ -1,0 +1,21 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 40px;
+    font-size: 20px;
+}
+
+a {
+    color: purple;
+    text-decoration: underline;
+}
+
+a[target="_blank"]:hover {
+    color: red;
+}
+
+a[target="_blank"]:hover::after {
+    content: " open in new window";
+    color: gray;
+    font-size: 16px;
+    margin-left: 6px;
+}

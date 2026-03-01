@@ -1,0 +1,28 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 40px;
+}
+
+.main-list {
+    font-size: 20px;
+}
+
+.main-list > li {
+    margin: 8px 0;
+}
+
+.main-list > li:nth-child(odd):hover {
+    background-color: #a9c9d6;
+    width: fit-content;
+    padding: 4px 10px;
+}
+
+.main-list ol {
+    margin-top: 6px;
+}
+
+.main-list ol li:nth-of-type(odd):hover {
+    background-color: #a9c9d6;
+    width: fit-content;
+    padding: 3px 8px;
+}

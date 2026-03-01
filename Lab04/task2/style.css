@@ -1,0 +1,19 @@
+h1 + p {
+    font-size: 20px;
+}
+
+p > code {
+    color: red;
+}
+
+p + code {
+    color: pink;
+}
+
+.adjacent-list li:hover + li {
+    background-color: yellow;
+}
+
+.general-list li:hover ~ li {
+    background-color: yellow;
+}
