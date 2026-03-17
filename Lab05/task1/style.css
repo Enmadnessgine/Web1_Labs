@@ -1,0 +1,76 @@
+body
+{
+	font-family: Arial, sans-serif;
+	background: #e5e5e5;
+	display: flex;
+	justify-content: center;
+	padding: 40px;
+}
+
+form
+{
+	background: #dcdcdc;
+	padding: 25px;
+	width: 320px;
+}
+
+label
+{
+	display: block;
+	margin-top: 10px;
+	font-weight: bold;
+}
+
+input[type="email"],
+input[type="text"]
+{
+	width: 100%;
+	padding: 6px;
+	background: #eef2a6;
+	border: 2px solid #d4d800;
+}
+
+input[type="password"]
+{
+	width: 100%;
+	padding: 6px;
+	background: #f3c2d9;
+	border: 2px solid #ff4fb5;
+}
+
+select
+{
+	width: 100%;
+	padding: 6px;
+	background: #bfc6ff;
+	border: 2px solid #4f5bff;
+}
+
+textarea
+{
+	width: 100%;
+	height: 80px;
+	background: #b8e3b8;
+	border: 2px solid #22aa22;
+}
+
+div
+{
+	margin-top: 10px;
+}
+
+input[type="submit"]
+{
+	background: #6bd36b;
+	border: none;
+	padding: 6px 10px;
+	cursor: pointer;
+}
+
+input[type="reset"]
+{
+	background: #ff7777;
+	border: none;
+	padding: 6px 10px;
+	cursor: pointer;
+}

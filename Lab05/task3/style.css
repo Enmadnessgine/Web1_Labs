@@ -1,0 +1,28 @@
+body{
+    font-family: Arial;
+}
+
+.menu{
+    list-style: none;
+    width: 220px;
+    padding: 0;
+}
+
+.menu > li{
+    background: #0a8f2a;
+    color: white;
+    padding: 8px;
+    margin-bottom: 3px;
+}
+
+.menu > li > ul{
+    list-style: none;
+    padding: 10px;
+    margin-top: 5px;
+    background: #ff8c00;
+}
+
+.menu > li > ul > li{
+    padding: 5px;
+    color: black;
+}

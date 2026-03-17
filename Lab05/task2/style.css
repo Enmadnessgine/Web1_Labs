@@ -1,0 +1,84 @@
+body
+{
+	font-family: Arial, sans-serif;
+	background: #f2f2f2;
+	display: flex;
+	justify-content: center;
+	padding: 40px;
+}
+
+form
+{
+	background: #ffffff;
+	padding: 25px;
+	width: 340px;
+	border: 1px solid #ccc;
+}
+
+h2
+{
+	text-align: center;
+}
+
+label
+{
+	display: block;
+	margin-top: 12px;
+}
+
+input, select
+{
+	width: 100%;
+	padding: 8px;
+	margin-top: 5px;
+	border: 2px solid #ccc;
+}
+
+input[type="checkbox"]
+{
+	width: auto;
+	margin-right: 6px;
+}
+
+input::placeholder
+{
+	color: #66a3ff;
+}
+
+input:focus, select:focus
+{
+	border-color: black;
+}
+
+input:valid, select:valid
+{
+	border-color: green;
+}
+
+input:invalid, select:invalid
+{
+	border-color: red;
+}
+
+input:not(:placeholder-shown)
+{
+	border-color: blue;
+}
+
+input:disabled
+{
+	background: #e0e0e0;
+}
+
+input[type="submit"]
+{
+	margin-top: 15px;
+	background: #66ccff;
+	border: none;
+	cursor: pointer;
+}
+
+input[type="submit"]:hover
+{
+	background: #4db8ff;
+}

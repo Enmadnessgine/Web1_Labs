@@ -17,45 +17,45 @@ label{display:block;margin-top:10px}
 <h2>Анкета відвідувача ресторану</h2>
 
 <fieldset>
-<legend>Контактна інформація</legend>
+    <legend>Контактна інформація</legend>
 
-<label for="name">Ім'я</label>
-<input type="text" id="name" name="name" required placeholder="Введіть ваше ім'я" pattern="[A-Za-zА-Яа-яІіЇїЄє]{2,}">
+    <label for="name">Ім'я</label>
+    <input type="text" id="name" name="name" required placeholder="Введіть ваше ім'я" pattern="[A-Za-zА-Яа-яІіЇїЄє]{2,}">
 
-<label for="email">Email</label>
-<input type="email" id="email" name="email" required placeholder="example@gmail.com" autocomplete="off">
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" required placeholder="example@gmail.com" autocomplete="off">
 
-<label for="phone">Телефон</label>
-<input type="text" id="phone" name="phone" placeholder="+380XXXXXXXXX" pattern="\+380[0-9]{9}">
+    <label for="phone">Телефон</label>
+    <input type="text" id="phone" name="phone" placeholder="+380XXXXXXXXX" pattern="\+380[0-9]{9}">
 
-<label for="readonly">Номер анкети</label>
-<input type="text" id="readonly" value="REST-2026-001" readonly>
+    <label for="readonly">Номер анкети</label>
+    <input type="text" id="readonly" value="REST-2026-001" readonly>
 
-<label for="disabled">Промокод</label>
-<input type="text" id="disabled" placeholder="Недоступно" disabled>
+    <label for="disabled">Промокод</label>
+    <input type="text" id="disabled" placeholder="Недоступно" disabled>
 
 </fieldset>
 
 <fieldset>
 <legend>Деталі візиту</legend>
 
-<label for="date">Дата відвідування</label>
-<input type="date" id="date" name="date" required>
+    <label for="date">Дата відвідування</label>
+    <input type="date" id="date" name="date" required>
 
-<label for="guests">Кількість гостей</label>
-<input type="number" id="guests" name="guests" min="1" max="20" required placeholder="1-20">
+    <label for="guests">Кількість гостей</label>
+    <input type="number" id="guests" name="guests" min="1" max="20" required placeholder="1-20">
 
-<label for="rating">Оцінка (1-10)</label>
-<input type="range" id="rating" name="rating" min="1" max="10" value="5"
-oninput="ratingOutput.value=this.value">
-<output id="ratingOutput">5</output>
+    <label for="rating">Оцінка (1-10)</label>
+    <input type="range" id="rating" name="rating" min="1" max="10" value="5"
+    oninput="ratingOutput.value=this.value">
+    <output id="ratingOutput">5</output>
 
-<label for="satisfaction">Рівень задоволеності</label>
-<meter min="0" max="10" value="8"></meter>
+    <label for="satisfaction">Рівень задоволеності</label>
+    <meter min="0" max="10" value="8"></meter>
 
-<label>Чи порадите нас друзям?</label>
-<label><input type="radio" name="recommend" value="yes" checked> Так</label>
-<label><input type="radio" name="recommend" value="no"> Ні</label>
+    <label>Чи порадите нас друзям?</label>
+    <label><input type="radio" name="recommend" value="yes" checked> Так</label>
+    <label><input type="radio" name="recommend" value="no"> Ні</label>
 
 </fieldset>
 
@@ -77,10 +77,10 @@ oninput="ratingOutput.value=this.value">
 <label for="drink">Улюблений напій</label>
 <input list="drinks" id="drink" name="drink" placeholder="Оберіть або введіть напій">
 <datalist id="drinks">
-<option value="Кава">
-<option value="Чай">
-<option value="Сік">
-<option value="Вино">
+    <option value="Кава">
+    <option value="Чай">
+    <option value="Сік">
+    <option value="Вино">
 </datalist>
 
 <label>Додаткові послуги</label>

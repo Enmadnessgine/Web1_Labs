@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+	<meta charset="UTF-8">
+	<title>Реєстрація</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<form>
+	<h2>Реєстрація</h2>
+
+	<label>Ім'я</label>
+	<input type="text" name="name" placeholder="Введіть ваше ім'я" required minlength="2">
+
+	<label>Електронна пошта</label>
+	<input type="email" name="email" placeholder="Введіть вашу електронну пошту" required>
+
+	<label>Пароль</label>
+	<input type="password" name="password" placeholder="Введіть ваш пароль" required minlength="6">
+
+	<label>Вік</label>
+	<input type="number" name="age" placeholder="Введіть ваш вік" required min="1" max="120">
+
+	<label>
+		<input type="checkbox" required>
+		Я погоджуюсь з умовами
+	</label>
+
+	<label>Країна</label>
+	<select required>
+		<option value="">Виберіть країну</option>
+		<option>Україна</option>
+		<option>Польща</option>
+		<option>Німеччина</option>
+	</select>
+
+	<input type="submit" value="Зареєструватися">
+
+</form>
+
+</body>
+</html>
