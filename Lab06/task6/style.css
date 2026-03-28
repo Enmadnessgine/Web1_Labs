@@ -1,0 +1,100 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    color: #444;
+    line-height: 1.5;
+    background-color: #fff;
+    padding: 40px;
+}
+
+.main-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.header-icon {
+    width: 50px;
+    margin-right: 15px;
+}
+
+h1 {
+    font-size: 32px;
+    color: #333;
+    margin: 0;
+}
+
+.graduate-card {
+    display: flex; 
+    margin-bottom: 60px;
+    align-items: flex-start;
+}
+
+.profile {
+    flex: 0 0 200px;
+    text-align: center;
+    margin-right: 30px;
+}
+
+.photo-container {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 15px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 1px solid #ddd;
+}
+
+.photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.description {
+    font-size: 13px;
+    font-style: italic;
+    color: #666;
+}
+
+.quote-box {
+    position: relative;
+    padding: 10px 40px;
+    flex: 1;
+}
+
+.quote-text {
+    font-style: italic;
+    font-size: 15px;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.author {
+    text-align: right;
+    font-weight: 500;
+    color: #333;
+    margin: 0;
+}
+
+.quote-icon {
+    position: absolute;
+    font-size: 60px;
+    color: #eee;
+    font-family: Georgia, serif;
+    line-height: 1;
+}
+
+.quote-icon.start {
+    top: -10px;
+    left: 0;
+}
+
+.quote-icon.end {
+    bottom: -20px;
+    right: 0;
+}

@@ -1,0 +1,47 @@
+body
+{
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	padding: 40px;
+	background: #ffffff;
+}
+
+div
+{
+	width: 1200px;
+	height: 650px;
+
+	background-image:
+		url("bg3.png"),
+		url("bg2.png"),
+		url("6.png"),
+		url("1.png"),
+		url("4.png"),
+		url("3.png"),
+		url("2.png"),
+		url("5.png"),
+		url("0.png");
+
+	background-repeat:
+		no-repeat,
+		no-repeat,
+		no-repeat,
+		no-repeat,
+		no-repeat,
+		no-repeat,
+		no-repeat,
+		no-repeat,
+		no-repeat;
+
+	background-position:
+		top left,
+		bottom right,
+		170px 20px,
+		0px 300px,
+		840px 250px,
+		690px 180px,
+		930px 170px,
+		330px 100px,
+		center;
+}
