@@ -1,0 +1,26 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.animated-button {
+    padding: 15px 40px;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    border: 2px solid #ccc;
+    background-color: #e0e0e0;
+    color: black;
+    transition: all 0.4s ease;
+}
+
+.animated-button:hover {
+    background-color: red;
+    color: white;
+    border: 3px solid yellow;
+    transform: scale(1.1);
+}
