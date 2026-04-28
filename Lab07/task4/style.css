@@ -14,7 +14,7 @@ body {
     display: flex;
     overflow: hidden;
     cursor: pointer;
-    perspective: 1000px;
+    
 }
 
 .text {
