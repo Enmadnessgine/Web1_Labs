@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Адаптивна верстка без медіа-запитів</title>
+    <style>
+        :root {
+            --header-bg: #00ffff;
+            --aside1-bg: #ff00ff;
+            --main-bg: #32cd32;
+            --aside2-bg: #ffff00;
+            --footer-bg: #0000ff;
+        }
+
+        body {
+            margin: 0;
+            font-family: sans-serif;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .layout-grid {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        header, footer {
+            flex: 1 0 100%;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: var(--header-bg);
+        }
+
+        footer {
+            background-color: var(--footer-bg);
+            color: white;
+        }
+
+        .col {
+            padding: 20px;
+            box-sizing: border-box;
+            min-height: 150px;
+        }
+
+        .sidebar-left {
+            background-color: var(--aside1-bg);
+            flex: 1 1 200px;
+        }
+
+        .content-area {
+            background-color: var(--main-bg);
+            flex: 2 1 400px;
+        }
+
+        .sidebar-right {
+            background-color: var(--aside2-bg);
+            flex: 1 1 100%;
+        }
+
+        @supports (width: clamp(0px, 0px, 0px)) {
+            .sidebar-left {
+                flex: 1 1 clamp(25%, 200px, 100%);
+            }
+            .content-area {
+                flex: 2 1 clamp(50%, 400px, 100%);
+            }
+            .sidebar-right {
+                flex: 1 1 clamp(25%, 900px, 100%);
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="layout-grid">
+    <header>Header</header>
+
+    <aside class="col sidebar-left">Aside_1</aside>
+
+    <main class="col content-area">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+        Hic dicta quisquam asperiores nobis molestiae doloremque 
+        ea mollitia illum non itaque.
+    </main>
+
+    <aside class="col sidebar-right">Aside_2</aside>
+
+    <footer>Footer</footer>
+</div>
+
+</body>
+</html>

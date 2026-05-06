@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Адаптивне меню</title>
+    <style>
+        :root {
+            --nav-bg: #00bfff;
+            --text-white: #ffffff;
+        }
+
+        body {
+            margin: 0;
+            font-family: sans-serif;
+        }
+
+        .nav-container {
+            display: flex;
+            flex-wrap: wrap;
+            background: var(--nav-bg);
+            padding: 10px;
+            justify-content: flex-end;
+        }
+
+        .nav-item {
+            color: var(--text-white);
+            text-decoration: none;
+            padding: 10px 20px;
+            text-align: center;
+            white-space: nowrap;
+            flex: 1 1 200px;
+            max-width: 100%;
+        }
+
+        .nav-item:not(:placeholder-shown) {
+            flex-grow: 0;
+            flex-basis: auto;
+            min-width: 200px;
+        }
+
+        .nav-container::before {
+            content: "";
+            flex-grow: 1;
+            order: -1;
+        }
+    </style>
+</head>
+<body>
+
+<nav class="nav-container">
+    <a href="#" class="nav-item">Home</a>
+    <a href="#" class="nav-item">About</a>
+    <a href="#" class="nav-item">Products</a>
+    <a href="#" class="nav-item">Contact</a>
+</nav>
+
+</body>
+</html>

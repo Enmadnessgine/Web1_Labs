@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Navigation Variations</title>
+    <style>
+        :root {
+            --main-blue: #5b8bd5;
+            --dark-blue: #2b57a7;
+            --light-gray: #f0f0f0;
+            --white: #ffffff;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--light-gray);
+            padding: 30px;
+            color: #333;
+        }
+
+        .container {
+            margin-bottom: 40px;
+            max-width: 1000px;
+        }
+
+        h3, strong {
+            display: block;
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+            color: #444;
+            text-transform: uppercase;
+        }
+
+        .nav-bar {
+            display: flex;
+            background-color: var(--main-blue);
+            border: 1px solid var(--dark-blue);
+            min-height: 50px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .nav-item {
+            padding: 8px 18px;
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: var(--white);
+            font-size: 15px;
+            transition: all 0.3s ease;
+            border-right: 1px solid rgba(255, 255, 255, 0.15);
+            text-align: center;
+        }
+
+        .nav-item:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        .nav-item.active {
+            background-color: var(--white);
+            color: var(--main-blue);
+            font-weight: bold;
+        }
+
+        .menu-a { justify-content: space-between; }
+        
+        .menu-b { 
+            flex-direction: row-reverse; 
+            justify-content: space-between; 
+        }
+
+        .menu-c { justify-content: center; }
+
+        .menu-d { 
+            justify-content: center; 
+            align-items: stretch; 
+        }
+
+        .menu-e { 
+            justify-content: center; 
+            align-items: center; 
+            gap: 12px;
+            padding: 5px;
+        }
+        .menu-e .nav-item { border: none; background: rgba(0,0,0,0.05); border-radius: 4px; }
+
+        .menu-f { 
+            justify-content: flex-end; 
+            align-items: center; 
+            padding-right: 25px; 
+        }
+
+        .menu-g { 
+            justify-content: flex-end; 
+            align-items: center; 
+        }
+
+        .menu-h { 
+            flex-wrap: wrap; 
+            justify-content: center; 
+            height: auto; 
+            padding: 10px;
+        }
+        .menu-h .nav-item { border: none; }
+
+        .menu-i { 
+            flex-direction: column; 
+            width: 280px; 
+            height: auto; 
+        }
+        .menu-i .nav-item { 
+            justify-content: flex-start; 
+            border-right: none;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h3>Варіант A (Space-between)</h3>
+    <nav class="nav-bar menu-a">
+        <a href="#" class="nav-item">Home</a>
+        <a href="#" class="nav-item">About company</a>
+        <a href="#" class="nav-item active">Information</a>
+        <a href="#" class="nav-item">About us</a>
+    </nav>
+</div>
+
+<div class="container">
+    <h3>Варіант B (Reverse)</h3>
+    <nav class="nav-bar menu-b">
+        <a href="#" class="nav-item">Home</a>
+        <a href="#" class="nav-item">About company</a>
+        <a href="#" class="nav-item active">Information</a>
+        <a href="#" class="nav-item">About us</a>
+    </nav>
+</div>
+
+<div class="container">
+    <h3>Варіант C (Center)</h3>
+    <nav class="nav-bar menu-c">
+        <a href="#" class="nav-item active">Home</a>
+        <a href="#" class="nav-item">About company</a>
+        <a href="#" class="nav-item">Information</a>
+        <a href="#" class="nav-item">About us</a>
+    </nav>
+</div>
+
+<div class="container">
+    <h3>Варіант D (Stretch)</h3>
+    <nav class="nav-bar menu-d">
+        <a href="#" class="nav-item">Home</a>
+        <a href="#" class="nav-item active">About <br> company</a>
+        <a href="#" class="nav-item">Information <br> on how to <br> get to us</a>
+        <a href="#" class="nav-item">About us</a>
+    </nav>
+</div>
+
+<div class="container">
+    <h3>Варіант E (Gap & Center)</h3>
+    <nav class="nav-bar menu-e">
+        <a href="#" class="nav-item">Home</a>
+        <a href="#" class="nav-item active">About <br> company</a>
+        <a href="#" class="nav-item">Information <br> on how to <br> get to us</a>
+        <a href="#" class="nav-item">About us</a>
+    </nav>
+</div>
+
+<div class="container">
+    <h3>Варіант F (End with Padding)</h3>
+    <nav class="nav-bar menu-f">
+        <a href="#" class="nav-item active">Home</a>
+        <a href="#" class="nav-item">About <br> company</a>
+        <a href="#" class="nav-item">Information <br> on how to <br> get to us</a>
+        <a href="#" class="nav-item">About us</a>
+    </nav>
+</div>
+
+<div class="container">
+    <strong>Варіант G (Different Heights)</strong>
+    <nav class="nav-bar menu-g">
+        <a href="#" class="nav-item active" style="height: 30px;">About us</a>
+        <a href="#" class="nav-item" style="height: 80px;">Information<br>on how to<br>get to us</a>
+        <a href="#" class="nav-item" style="height: 50px;">About<br>company</a>
+        <a href="#" class="nav-item" style="height: 30px;">Home</a>
+    </nav>
+</div>
+
+<div class="container">
+    <strong>Варіант H (Wrap / Multi-line)</strong>
+    <nav class="nav-bar menu-h">
+        <a href="#" class="nav-item">Home</a>
+        <a href="#" class="nav-item">About company</a>
+        <a href="#" class="nav-item active">Information on how to get to us</a>
+        <a href="#" class="nav-item">About us</a>
+        <a href="#" class="nav-item">Products</a>
+        <a href="#" class="nav-item">Our successes</a>
+        <a href="#" class="nav-item">Our employees</a>
+        <a href="#" class="nav-item">Our salaries</a>
+    </nav>
+</div>
+
+<div class="container">
+    <strong>Варіант I (Vertical Column)</strong>
+    <nav class="nav-bar menu-i">
+        <a href="#" class="nav-item">Home</a>
+        <a href="#" class="nav-item">About company</a>
+        <a href="#" class="nav-item">Information on how to get to us</a>
+        <a href="#" class="nav-item active">About us</a>
+        <a href="#" class="nav-item">Products</a>
+        <a href="#" class="nav-item">Our successes</a>
+        <a href="#" class="nav-item">Our employees</a>
+        <a href="#" class="nav-item">Our salaries</a>
+    </nav>
+</div>
+
+</body>
+</html>

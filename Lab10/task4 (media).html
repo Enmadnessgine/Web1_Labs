@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Адаптивна верстка</title>
+    <style>
+        :root {
+            --header-bg: #00ffff;
+            --aside1-bg: #ff00ff;
+            --main-bg: #32cd32;
+            --aside2-bg: #ffff00;
+            --footer-bg: #0000ff;
+        }
+
+        body {
+            margin: 0;
+            font-family: sans-serif;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .layout-grid {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .header-section, .footer-section {
+            width: 100%;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .header-section {
+            background-color: var(--header-bg);
+        }
+
+        .footer-section {
+            background-color: var(--footer-bg);
+            color: white;
+        }
+
+        .col {
+            padding: 20px;
+            box-sizing: border-box;
+            min-height: 150px;
+        }
+
+        .sidebar-left {
+            background-color: var(--aside1-bg);
+            width: 25%;
+        }
+
+        .content-area {
+            background-color: var(--main-bg);
+            width: 50%;
+        }
+
+        .sidebar-right {
+            background-color: var(--aside2-bg);
+            width: 25%;
+        }
+
+        @media (max-width: 900px) {
+            .sidebar-left {
+                width: 30%;
+            }
+
+            .content-area {
+                width: 70%;
+            }
+
+            .sidebar-right {
+                width: 100%;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .sidebar-left, 
+            .content-area, 
+            .sidebar-right {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="layout-grid">
+    <header class="header-section">Header</header>
+
+    <aside class="col sidebar-left">Aside_1</aside>
+
+    <main class="col content-area">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+        Hic dicta quisquam asperiores nobis molestiae doloremque 
+        ea mollitia illum non itaque.
+    </main>
+
+    <aside class="col sidebar-right">Aside_2</aside>
+
+    <footer class="footer-section">Footer</footer>
+</div>
+
+</body>
+</html>
