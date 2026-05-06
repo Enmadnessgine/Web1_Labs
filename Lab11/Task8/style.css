@@ -1,0 +1,36 @@
+div {
+  padding: 10px;
+  border: 1px solid green;
+}
+div::after {
+  content: "This is the end of div";
+  display: block;
+  font-style: italic;
+  color: gray;
+  margin-top: 5px;
+}
+
+section {
+  padding: 10px;
+  border: 1px solid red;
+  margin: 10px 0;
+}
+section::after {
+  content: "This is the end of section";
+  display: block;
+  font-style: italic;
+  color: gray;
+  margin-top: 5px;
+}
+
+p {
+  padding: 10px;
+  border: 1px solid blue;
+}
+p::after {
+  content: "This is the end of p";
+  display: block;
+  font-style: italic;
+  color: gray;
+  margin-top: 5px;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,27 @@
+.alert {
+  padding: 15px;
+  margin: 10px 0;
+  border: 1px solid;
+  border-radius: 4px;
+  font-family: sans-serif;
+}
+.alert-success {
+  color: #48a548;
+  background-color: #a0d6a0;
+  border-color: #5cb85c;
+}
+.alert-info {
+  color: #2badd4;
+  background-color: #9cd9eb;
+  border-color: #5bc0de;
+}
+.alert-warning {
+  color: #dd8913;
+  background-color: #f5c684;
+  border-color: #f0ad4e;
+}
+.alert-danger {
+  color: #c32f2a;
+  background-color: #e79290;
+  border-color: #d9534f;
+}/*# sourceMappingURL=style.css.map */

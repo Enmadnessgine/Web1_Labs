@@ -1,0 +1,23 @@
+
+$elements: (
+  "div": green,
+  "section": red,
+  "p": blue
+);
+
+@each $tag, $color in $elements {
+  #{$tag} {
+    padding: 10px;
+    border: 1px solid $color;
+    
+    @if $tag == "section" { margin: 10px 0; }
+
+    &::after {
+      content: "This is the end of #{$tag}";
+      display: block;
+      font-style: italic;
+      color: gray;
+      margin-top: 5px;
+    }
+  }
+}

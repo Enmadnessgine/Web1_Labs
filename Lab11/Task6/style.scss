@@ -1,0 +1,28 @@
+
+$breaks: (sm: 576px, md: 768px, lg: 992px, xl: 1200px, xxl: 1400px);
+$containers: (sm: 540px, md: 720px, lg: 960px, xl: 1140px, xxl: 1320px);
+
+[class*="col-"] {
+  padding: 10px;
+  background: #e1f5fe;
+  border: 1px solid #01579b;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.container { margin: 0 auto; width: 100%; }
+.row { display: flex; flex-wrap: wrap; }
+
+@for $i from 1 through 12 {
+  .col-#{$i} { width: (100% / 12) * $i; }
+}
+
+@each $name, $width in $breaks {
+  @media (min-width: $width) {
+    .container { width: map-get($containers, $name); }
+
+    @for $i from 1 through 12 {
+      .col-#{$name}-#{$i} { width: (100% / 12) * $i; }
+    }
+  }
+}
