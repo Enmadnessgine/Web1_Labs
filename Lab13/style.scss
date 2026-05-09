@@ -1,0 +1,189 @@
+$bg-dark: #121212;
+$glass-bg: rgba(255, 255, 255, 0.05);
+$glass-border: rgba(255, 255, 255, 0.1);
+$accent-purple: #9d50bb;
+$accent-blue: #6e7ff3;
+$text-light: #f8f9fa;
+$transition-smooth: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+
+@mixin glass-effect {
+  background: $glass-bg;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid $glass-border;
+  border-radius: 20px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body.dark-theme {
+  background-color: $bg-dark;
+  background-image: 
+    radial-gradient(circle at 10% 20%, rgba(157, 80, 187, 0.05) 0%, transparent 40%),
+    radial-gradient(circle at 90% 80%, rgba(110, 127, 243, 0.05) 0%, transparent 40%);
+  color: $text-light;
+  font-family: 'Segoe UI', Roboto, sans-serif;
+  overflow-x: hidden;
+}
+
+.section-padding {
+  padding: 60px 0;
+}
+
+.section-title {
+  font-weight: 700;
+  background: linear-gradient(to right, $accent-purple, $accent-blue);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.glass {
+  @include glass-effect;
+}
+
+.glass-nav {
+  background: rgba(18, 18, 18, 0.8);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid $glass-border;
+}
+
+.header-section {
+  padding: 100px 0 50px;
+  
+  .profile-card {
+    padding: 40px;
+    display: inline-block;
+    width: 100%;
+    max-width: 800px;
+  }
+
+  .profile-img-wrapper {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    border: 4px solid $accent-purple;
+    border-radius: 50%;
+    overflow: hidden;
+    transition: $transition-smooth;
+
+    &:hover {
+      transform: scale(1.05) rotate(5deg);
+      border-color: $accent-blue;
+    }
+  }
+
+  .profile-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .status-badge {
+    background: rgba($accent-purple, 0.15);
+    color: lighten($accent-purple, 20%);
+    padding: 5px 15px;
+    border-radius: 50px;
+    font-size: 0.9rem;
+  }
+}
+
+.nav-link {
+  color: $text-light !important;
+  font-weight: 500;
+  transition: $transition-smooth;
+
+  &:hover {
+    color: $accent-blue !important;
+    transform: translateY(-2px);
+  }
+}
+
+.skill-badge {
+  padding: 10px 25px;
+  font-weight: 600;
+  transition: $transition-smooth;
+  cursor: default;
+
+  &:hover {
+    background: linear-gradient(135deg, $accent-purple, $accent-blue);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+  }
+}
+
+.project-card, .post-card {
+  transition: $transition-smooth;
+  
+  &:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.4);
+    border-color: rgba($accent-blue, 0.4);
+  }
+
+  .accent-text {
+    color: $accent-blue;
+  }
+}
+
+.post-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 20px 20px 0 0;
+}
+
+.gallery-item {
+  overflow: hidden;
+  height: 200px;
+  
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+  }
+
+  &:hover img {
+    transform: scale(1.15);
+  }
+}
+
+.contact-link {
+  a {
+    color: $text-light;
+    text-decoration: none;
+    transition: $transition-smooth;
+    display: block;
+
+    &:hover {
+      color: $accent-blue;
+      transform: scale(1.05);
+    }
+  }
+}
+
+.footer-section {
+  .social-footer a {
+    color: $text-light;
+    font-size: 1.5rem;
+    transition: $transition-smooth;
+
+    &:hover {
+      color: $accent-purple;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .header-section {
+    padding: 60px 0 30px;
+  }
+  
+  .navbar-nav {
+    text-align: center;
+    padding: 20px 0;
+  }
+}
